@@ -38,12 +38,12 @@ export function links() {
   return [{ rel: 'stylesheet', href: authStyles }];
 }
 
-export function meta() {
+export const meta = () => {
   return {
     title: 'Login | Signup',
     description: 'Login or register.',
   };
-}
+};
 
 export function headers({ actionHeaders, loaderHeaders, parentHeaders }) {
   return {

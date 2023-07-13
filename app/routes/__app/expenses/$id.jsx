@@ -55,7 +55,7 @@ export async function action({ params, request }) {
   }
 }
 
-export function meta({ params, location, data, parentsData }) {
+export const meta = ({ params, location, data, parentsData }) => {
   const expense = parentsData['routes/__app/expenses'].find(
     (expense) => expense.id === params.id
   );
@@ -63,4 +63,4 @@ export function meta({ params, location, data, parentsData }) {
     title: expense.title,
     description: 'Update expense.',
   };
-}
+};

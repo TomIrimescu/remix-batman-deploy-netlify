@@ -41,9 +41,9 @@ export async function action({ request }) {
   return redirect('/expenses');
 }
 
-export function meta() {
+export const meta = () => {
   return {
     title: 'Add an expense',
     description: 'Add an expense with ease.',
   };
-}
+};

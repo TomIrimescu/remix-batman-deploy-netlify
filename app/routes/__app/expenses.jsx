@@ -66,12 +66,12 @@ export async function loader({ request }) {
 //   return <p>Error</p>;
 // }
 
-export function meta() {
+export const meta = () => {
   return {
     title: 'Manage expenses',
     description: 'Manage your expenses in one place.',
   };
-}
+};
 
 export function headers({ actionHeaders, loaderHeaders, parentHeaders }) {
   return {

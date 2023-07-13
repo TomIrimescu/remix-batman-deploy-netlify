@@ -52,9 +52,9 @@ export function CatchBoundary() {
   );
 }
 
-export function meta() {
+export const meta = () => {
   return {
     title: 'Analyze expenses',
     description: 'View your monthly expenses.',
   };
-}
+};
